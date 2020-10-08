@@ -253,6 +253,10 @@ nav ul li {
     .nav-2 {
         font-size: 00.7rem;
     }
+    .top-articles .article-1 .article-heading h1 {
+        font-size: 2rem;
+        font-family: 'Archivo Black', sans-serif;
+    }
 }
 
 @media screen and (max-width: 565px){
