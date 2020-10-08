@@ -1,0 +1,269 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+* {
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Navbar styling  */
+
+.container {
+    /* background-color: teal; */
+    min-height: 100Vh;
+    position: relative;
+}
+header {
+    position: relative;
+    overflow: auto;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0rem 0.35rem;
+}
+
+.nav-1 {
+    max-width: 100%;
+    height: 1.9rem;
+    background-color: black;
+    color: white;
+    font-size: 0.7rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.9rem;
+    padding: 0rem 1rem;
+    color: rgb(190, 190, 190);
+}
+
+.nav-1-left {
+    float: left;
+}
+
+.nav-1-right {
+    float: right;
+}
+
+.nav-2 {
+    position: relative;
+    font-family: 'Aldrich', sans-serif;
+    height: 2.8rem;
+    width: 100%;
+    background-color: white;
+    line-height: 2.8rem;
+    padding-left:1.7rem;
+    font-size: 0.9rem;
+    color: rgb(182, 182, 182);
+    position: sticky;
+    top: 0rem;
+    z-index: 1;
+}
+
+.nav-2-left {
+    float: left;
+}
+
+.nav-2-right {
+    float: right;
+    height: 2.8rem;
+    width: 2.8rem;
+    border-left: 0.01rem solid rgb(201, 201, 201);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styling top-articles  */
+
+.top-articles {
+    max-width: 100%;
+    height: 29rem;
+    margin: 0.5rem;
+    box-sizing: border-box;
+    color: white;
+}
+
+.top-articles .article-1 {
+    background-image: linear-gradient(to top,black,rgba(0, 0, 0, 0), red), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/table_lamp_200w_in-2-796x448.jpg");
+    width: 64.5%;
+    height: 100%;
+    float: left;
+    background-size: cover;
+    position: relative;
+}
+
+.top-articles .article-2 {
+    background-image: linear-gradient(to top,black,rgba(0, 0, 0, 0)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/tnw2020-feature_img-02.jpg");
+    width: 35%;
+    height: 49.5%;
+    float: right;
+    background-size: cover;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.top-articles .article-3 {
+    background-image: linear-gradient(to top,black,rgba(0, 0, 0, 0)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/PS5-Horizontal-796x417.jpg");
+    width: 35%;
+    height: 50%;
+    float: right;
+    background-size: cover;
+    position: relative;
+}
+
+
+.top-articles .article-1 > h1 {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 5rem;
+    font-weight: 900 ;
+}
+
+.top-articles .article-1 .date {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.top-articles .article-1 .article-heading {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.top-articles .article-1 .article-heading h1 {
+    font-size: 2.7rem;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.top-articles .article-1 .article-heading .author-time {
+    font-size: 0.7rem;
+    color: rgb(116, 116, 116);
+}
+
+
+.top-articles .article-2 h1, .top-articles .article-3 h1{
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem;
+}
+
+.top-articles .article-3 span {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
+    font-size: 0.7rem;
+    color: rgb(110, 110, 110);
+}
+
+
+/* styling latest news section  */
+
+.latest-news {
+    max-width: 77%;
+    height: 25rem;
+    margin: 6rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+    position: relative;
+}
+
+.latest-news div img{
+    width: 100%;
+    height: 67%;
+}
+
+.latest-news div p{
+    width: 90%;
+   font-size: 0.8rem;
+   font-weight: 700;
+}
+.latest-news div span{
+   font-size: 0.7rem;
+   font-weight: 700;
+   color: rgb(160, 160, 160);
+}
+
+.latest-news h1 {
+    position: absolute;
+    top: -2.4rem;
+    left: 1rem;
+}
+
+
+@media screen and (max-width:1024px){
+    .latest-news {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .top-articles .article-1 > h1 {
+        display: none;
+    }
+
+    .top-articles .article-1 {
+        background-image: linear-gradient(to top,black,rgba(0, 0, 0, 0)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/table_lamp_200w_in-2-796x448.jpg");
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .latest-news {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .top-articles .article-1 {
+        width: 100%;
+        height: 33%;
+        margin-bottom: 4px;
+    }
+    
+    .top-articles .article-2 {
+        width: 100%;
+        height: 33%;
+        margin-bottom: 4px;
+    }
+    
+    .top-articles .article-3 {
+        width: 100%;
+        height: 33%;
+        margin-bottom: 4px;
+    }
+    .top-articles .article-1 .date {
+        display: none;
+    }
+
+    .top-articles .article-1 span:nth-child(1) {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .nav-1 {
+        display: none;
+    }
+    .nav-2 {
+        font-size: 00.7rem;
+    }
+}
+
+@media screen and (max-width: 565px){
+    .nav-2 {
+        font-size: 0.5rem;
+        line-height: 1rem;
+
+    }
+    .nav-2-right {
+        display: none;
+    }
+}
+
+
